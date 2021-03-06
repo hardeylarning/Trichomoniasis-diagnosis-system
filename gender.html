@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Gender</title>
+    <link rel="stylesheet" href="b4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="b4.3.1/css/style.css">
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <a href="./index.html">
+            <img src="fontawesome/svgs/solid/home.svg" height="40px" width="40px">
+        </a>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/female symbol o.png" class="img-responsive" width="250px">
+                    <img src="images/male symbol.png" class="img-responsive" width="250px">
+                </div>
+                <div class="offset-md-2 col-md-4" style="margin-top: 100px;">
+                    <form action="" name="genderHolder">
+                        <legend class="ml-5 mb-3">Select Your Gender</legend>
+                        <div class="form-check">
+                            <input type="radio" name="gender" id="male" class="mr-2" value="male">
+                            <label for="male" class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="gender" id="female" class="mr-2" value="female">
+                            <label for="female" class="form-check-label">Female</label>
+                        </div>
+                        <div class="input-group ml-5" style="margin-top: 100px;">
+                            <button type="button" id="btnGender" onclick="if(confirm('Are you sure you selected correct gender?')) genderSelector()" class="btn-color">CONTINUE</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./b4.3.1/jquery.js"></script>
+    <script src="./b4.3.1/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./b4.3.1/js/bootstrap.js"></script>
+    <footer style="height: 30px; background-color: #FF9F00; margin-top: 135px;" >
+    </footer>
+</body>
+</html>

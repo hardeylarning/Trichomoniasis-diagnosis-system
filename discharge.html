@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discharge</title>
+    <link rel="stylesheet" href="b4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="b4.3.1/css/style.css">
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <a href="./index.html">
+            <img src="fontawesome/svgs/solid/home.svg" height="40px" width="40px">
+        </a>
+        <div class="container mt-5">
+            <div class="mt-3 offset-2 col-8">
+                <legend class="mb-5 text-center">What type of Discharge are you Experiencing</legend>
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="yellowish" class="mr-2" value="yellowish">
+                    <label for="yellowish" class="form-check-label">Discharge Yellowish-Green with foam or blood</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="yellow" class="mr-2" value="yellow">
+                    <label for="yellow" class="form-check-label">Discharge is Yellow in Colour with a Strong odour</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="white" class="mr-2" value="white">
+                    <label for="white" class="form-check-label">Discharge is White in Colour with Mucus</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="others" class="mr-2" value="others">
+                    <label for="others" class="form-check-label">Others</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="no_discharge" class="mr-2" value="no_discharge">
+                    <label for="no_discharge" class="form-check-label">No Discharge</label>
+                </div>
+                <div class="input-group justify-content-center" style="margin-top: 70px;">
+                    <button type="button" onclick="if(confirm('Are you sure you selected correct discharge you are experiencing?')) discharge('yellowish', 'positive.html')" class="btn-color">PROCEED</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./b4.3.1/jquery.js"></script>
+    <script src="./b4.3.1/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./b4.3.1/js/bootstrap.js"></script>
+    <footer style="height: 30px; background-color: #FF9F00; margin-top: 180px;" >
+    </footer>
+</body>
+</html>

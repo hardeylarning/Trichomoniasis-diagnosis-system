@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Female</title>
+    <link rel="stylesheet" href="b4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="b4.3.1/css/style.css">
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <a href="./index.html">
+            <img src="fontawesome/svgs/solid/home.svg" height="40px" width="40px">
+        </a>
+        <div class="container mt-5">
+            <legend class=" text-center mb-5">Select The Symptom(s) You are Experiencing</legend>
+            <div class="row">
+                <div class="offset-md-2 col-md-4">
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="headache" class="mr-2" value="headache">
+                        <label for="headache" class="form-check-label">Headache</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="dizziness" class="mr-2" value="dizziness">
+                        <label for="dizziness" class="form-check-label">Dizziness</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="discharge" class="mr-2" value="discharge">
+                        <label for="discharge" class="form-check-label">Discharge (from vagina)</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="itching" class="mr-2" value="itching">
+                        <label for="itching" class="form-check-label">Itching (Vaginal Region)</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="lower_abdominal_pain" class="mr-2" value="lower_abdominal_pain">
+                        <label for="lower_abdominal_pain" class="form-check-label">Lower Abdominal Pain</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="dysuria" class="mr-2" value="dysuria">
+                        <label for="dysuria" class="form-check-label">Dysuria (pain during urination)</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="cough" class="mr-2" value="cough">
+                        <label for="cough" class="form-check-label">Cough</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="dyspareunia" class="mr-2" value="dyspareunia">
+                        <label for="dyspareunia" class="form-check-label">Dyspareunia (pain during sexual intercourse)</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="abdominal_pain" class="mr-2" value="abdominal_pain">
+                        <label for="abdominal_pain" class="form-check-label">Abdominal Pain</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="vaginal_odour" class="mr-2" value="vaginal_odour">
+                        <label for="vaginal_odour" class="form-check-label">Vaginal Odour</label>
+                    </div>
+                </div>
+                <div class="input-group justify-content-center" style="margin-top: 100px;">
+                    <button type="button" id="btnFemale" onclick="if(confirm('Are you sure you want to proceed?')) discharge('discharge','discharge.html')" class="btn-color">PROCEED</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./b4.3.1/jquery.js"></script>
+    <script src="./b4.3.1/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./b4.3.1/js/bootstrap.js"></script>
+    <footer style="height: 30px; background-color: #FF9F00; margin-top: 133px;" >
+    </footer>
+</body>
+</html>
